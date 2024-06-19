@@ -1,0 +1,1124 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: none;
+  font-family: "Yeseva One", serif;
+}
+
+/* Navbar  */
+.navbar {
+  background-color: rgb(158, 103, 103, 10);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  /* font-style: oblique; */
+  font-size: 1.2em;
+}
+
+/* cover  */
+#cover {
+  height: 100vh;
+}
+
+#cover .container-fluid {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background: url(../images/cov.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+#cover .container-fluid .container h1 {
+  color: #6b3d3d;
+  font-weight: 900;
+  font-size: 3.9rem;
+}
+
+#cover .container-fluid .container p {
+  color: #855353;
+  font-weight: 900;
+  font-size: 1.9em;
+}
+
+#cover .container-fluid .container #btn {
+  font-weight: 700;
+}
+
+/* login signUp */
+#btn .btn {
+  border: 2px solid #855353;
+  color: #855353;
+  margin: 20px;
+}
+
+#btn .btn1 {
+  border: 2px solid #855353;
+  background-color: #855353;
+  color: #eeb2b2;
+}
+
+/* LOGIN AND SIGN UP BUTTON  */
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+.login:hover {
+  opacity: 0.8;
+}
+
+.signin {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signin:hover {
+  opacity: 1;
+}
+
+.signmodal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /*Sit on top*/
+  left: 0;
+  top: 0;
+  width: 50%;
+  /* Full width */
+  height: 90%;
+  /* Full height */
+  overflow: hidden;
+  /*Enable scroll if needed*/
+  /* background-color: #474e5d; */
+  padding-top: 50px;
+  margin-top: 2%;
+  margin-left: 22%;
+}
+
+.sign-modal-content {
+  background-color: #fefefe;
+  margin: 2% auto 10% auto;
+  /*5% from the top, 15% from the bottom and centered*/
+  border: 1px solid #888;
+  width: 90%;
+  /* Could be more or less, depending on screen size */
+  height: 90%;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.avatar {
+  width: 15%;
+  border-radius: 50%;
+}
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 50%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  padding-top: 60px;
+  margin-top: 3%;
+  margin-left: 22%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #6b3d3d;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #6b3d3d;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .modal,
+  .signmodal {
+    width: 90%;
+    /* Adjust the width as needed */
+    margin-left: 5%;
+    /* Center the modal */
+    height: 100%;
+  }
+
+  .signmodal {
+    height: 90%;
+  }
+  
+}
+
+/* ABOUT  */
+.stem {
+  position: absolute;
+}
+
+#about {
+  width: 100%;
+  background-color: #dfa9a8;
+}
+
+#about .row {
+  grid-gap: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+#about .container-fluid .about {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 10%;
+  /* padding: 10%; */
+  background-color: rgb(161, 98, 98, 0.3);
+  height: 50%;
+  border: 1px solid #855353;
+  border-radius: 10px;
+  box-shadow: 30px 30px #855353;
+}
+
+#about .container-fluid .about h2 {
+  color: #684040;
+  font-weight: 900;
+}
+
+#about .container-fluid .about p {
+  color: #684040;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+#about .container-fluid .girl {
+  justify-content: center;
+  align-items: center;
+}
+
+#about .container-fluid .girl img {
+  height: 500px;
+  width: 100%;
+  border-radius: 150px 150px 0px 0px;
+  border: 10px solid #855353;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  #about .container-fluid .about {
+    margin-top: 5%;
+    width: 100%;
+    min-width: 70%;
+    box-shadow: 5px 5px #684040;
+
+  }
+
+  .stem img {
+
+    width: 100%;
+    max-width: 70%;
+  }
+
+  #about .container-fluid .girl img {
+    width: 100%;
+    min-width: 66%;
+    margin-bottom: 5%;
+    height: 350px;
+  }
+
+  #about .container-fluid .about p {
+
+    font-size: 15px;
+  }
+
+  #border img {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .signmodal {
+    width: 80%;
+    height: 90%;
+  }
+
+  .card {
+    width: 90%;
+    height: 30%;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+  #about .container-fluid .about {
+    margin-top: 5%;
+    width: 60%;
+    min-width: 50%;
+    box-shadow: 5px 5px #684040;
+  }
+
+  #about .container-fluid .girl img {
+    width: 100%;
+    min-width: 66%;
+    margin-bottom: 5%;
+    height: 350px;
+  }
+
+  #about .container-fluid .about p {
+
+    font-size: 15px;
+  }
+
+  #border img {
+    width: 100%;
+    max-width: 60%;
+  }
+
+  .signmodal {
+    height: 100%;
+
+  }
+  .sign-modal-content {
+   width: 100%; 
+   max-width: 80%;
+    height: 100%;
+ 
+  }
+
+}
+
+/* Flower Border */
+#border {
+  display: flex;
+  position: relative;
+  justify-content: center;
+
+  background-color: #dfa9a8;
+}
+
+#occasion {
+  display: flex;
+  position: relative;
+  background-color: #f2e3e3;
+  /* background-color: #eeb2b2; */
+  border: 1px solid #855353;
+  justify-content: center;
+}
+
+#occasion .row {
+  justify-content: space-around;
+}
+
+#occasion .row h2 {
+  color: #ae6666;
+  font-weight: 900;
+  /* text-decoration: underline; */
+  font-family: "Yeseva One", serif;
+  font-size: 4em;
+}
+
+#occasion .row .card img {
+  border-radius: 20px;
+  height: 250px;
+  /* padding: 10px; */
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 2px solid #684040; */
+  border: none;
+  height: 75%;
+  width: 30%;
+  border-radius: 20px;
+  background-color: #eccece;
+}
+
+#occasion .btn {
+  background-color: #eeb2b2;
+  border: 1px solid #684040;
+  color: #684040;
+  margin-left: 38%;
+  border-radius: 10px;
+}
+
+/* Occasion Modal (background) */
+.bmodal,
+.wmodal,
+.amodal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.bmodal-content,
+.wmodal-content,
+.amodal-content {
+  /* background-color: #fefefe; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  background-color: #ebbaba;
+}
+
+/* The Close Button */
+.bclose,
+.wclose,
+.aclose {
+  color: #3d2d2d;
+  float: right;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.bclose:hover,
+.bclose:focus,
+.wclose:hover,
+.wclose:focus,
+.aclose:hover,
+.aclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  z-index: 1000;
+}
+
+.flip-card-inner {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.flip-card-inner img {
+  border: 5px solid black;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  display: block;
+  background-color: #855353;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-back .btn{
+  margin-right: 50%;
+  width: 40%;
+}
+.flip-card-back h4 {
+  font-family: "Yeseva One", serif;
+  font-size: 1.7em;
+  margin: 10%;
+}
+
+@media only screen and (max-width: 480px) {
+  #occasion .row h2 {
+    color: #ae6666;
+    font-weight: 900;
+    /* text-decoration: underline; */
+    font-family: "Yeseva One", serif;
+    font-size: 2em;
+  }
+
+  .card {
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 110%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+  }
+
+  #occasion .btn {
+    height: 50pxx;
+
+  }
+
+  .signmodal {
+    height: 100%;
+  }
+
+  #border img {
+    width: 100%;
+    max-width: 60%;
+  }
+}
+
+.slides {
+  height: 66vh;
+  width: 75%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  border: 4px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+
+}
+
+/* slider       */
+.slide {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  inset: 0;
+
+  animation: slide-show 12s infinite;
+
+}
+
+.slide-2 {
+  animation-delay: 4s;
+}
+
+.slide-3 {
+  animation-delay: 8s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes slide-show {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20%,
+  30% {
+    opacity: 1;
+    scale: 1.03;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* flower gallery css  */
+
+div.gallery {
+  border: 1px solid #ccc;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+
+.clearfix1:after {
+  content: "";
+  /* display: flex; */
+  clear: both;
+}
+
+.modals {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content-gallery {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal-images .gallery {
+  flex: 1 1 30%;
+  margin: 10px;
+}
+
+.modal-images img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+
+    width: 100%;
+    margin-right: 18%;
+  }
+
+  .container .responsive {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  #border img {
+    width: 100%;
+    max-width: 60%;
+  }
+}
+
+
+/* comparision  */
+.containertp {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2e3e3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.containertp label {
+  font-size: 20px;
+  padding: 0px 20px;
+}
+
+.product-img {
+  max-width: 100px;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.product-img:hover {
+  transform: scale(1.1);
+}
+
+.compare-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.compare-box {
+  flex: 1 1 45%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: none;
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+  .containertp {
+    width: 100%;
+    max-width: 90;
+  }
+
+  .containertp label {
+    display: block;
+    margin-top: 2%;
+  }
+
+  .containertp .compare {
+    display: block;
+    margin-left: 40%;
+    margin-top: 2%;
+  }
+
+  .compare-box {
+    flex: 1 1 100%;
+  }
+
+  .signmodal {
+    height: 60%;
+    width: 60%;
+    margin-top: 8%;
+  }
+
+  .modal {
+    width: 90%;
+    /* Adjust the width as needed */
+    margin-left: 5%;
+    /* Center the modal */
+    height: 60%;
+  }
+
+  #border img {
+    width: 100%;
+    max-width: 60%;
+  }
+}
+
+/*contact us  */
+#contact {
+  background-color: #f2e3e3;
+  width: 100%;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#contact .container {
+  display: flex;
+  /* margin: 0 10px; */
+  width: 70%;
+  max-width: 70%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #684040;
+  border-radius: 20px;
+  box-shadow: 10px 10px #855353;
+  color: #6b3d3d;
+  margin-bottom: 5%;
+}
+
+#contact input,
+#contact textarea {
+  background: transparent;
+  border: 1px solid #6b3d3d;
+  color: #6b3d3d;
+  width: 100%;
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+  #contact .container {
+    display: flex;
+
+    width: 100%;
+    max-width: 60%;
+
+  }
+
+  #contact input,
+  #contact textarea {
+
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact .container {
+    display: flex;
+
+    width: 100%;
+    max-width: 90%;
+
+  }
+
+  #contact input,
+  #contact textarea {
+
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+#contact.btn {
+  background-color: #6b3d3d;
+  border: 1px solid #6b3d3d;
+  color: #fac7c7;
+  padding: 10px;
+  cursor: pointer;
+  align-self: center;
+  width: 50%;
+  text-align: center;
+}
+
+#Png-flower .container-fluid {
+  width: 100%;
+  background-color: #a55e5e;
+
+  color: #f7f7f7;
+}
+
+#Png-flower .container-fluid .col-md-5 {
+  display: flex;
+  justify-content: center;
+}
+
+#Png-flower .container-fluid .col-md-7 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* footer  */
+footer {
+  background-color: #855353;
+  color: #ffffff;
+}
+
+footer .row {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+footer .container-fluid .col-md-2 ul {
+  list-style: none;
+}
+
+footer .container-fluid .col-md-2 ul a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer .container-fluid .col-md-4 p {
+  font-size: 20px;
+}
+
+footer .container-fluid .col-md-3 a {
+  padding: 5px;
+}
+
+footer .container-fluid .col-md-3 .refreshCounter {
+  /* background-color: rgba(165, 124, 124, 0.6); */
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 100%; */
+  /* height: 100%; */
+  font-size: 1.2rem;
+  align-items: center;
+  list-style: none;
+  color: #000;
+  font-weight: 700;
+  /* box-shadow: 10px 10px #6b3d3d; */
+}
+
+footer .container-fluid .col-md-3 .refreshCounter .p-2 {
+  margin-bottom: 0em;
+}
+
+footer .icons {
+  padding-left: 2%;
+}
+
+footer .icons svg {
+  fill: #ccc;
+}
+
+@media (max-width: 760px) {
+  #cover .container-fluid .container h1 {
+    font-size: 2.5em;
+    margin-top: 10%;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  #cover .container-fluid .container .des {
+    width: 100%;
+    max-width: 90%;
+    font-size: 1.5em;
+  }
+
+  #cover .container-fluid .container .description p {
+    font-size: 1px;
+  }
+
+  .login,
+  .signin {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sign-modal-content {
+    margin-top: 6%;
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* .navbar  {
+   height: 50px;
+  } */
+  .navbar .navbar-brand img {
+    height: 30px;
+  }
+
+  #cover .container {
+    margin-top: 5%;
+  }
+
+  #cover .container-fluid .container h1 {
+    font-size: 1.5em;
+  }
+
+  #cover .container-fluid .container p {
+    font-size: 1em;
+    width: 100%;
+    max-width: 90%;
+
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px)and (min-width: 320px) {
+  .card {
+    width: 90%;
+    height: 30%;
+  }
+
+  .card .btn {
+    margin-left: 500px;
+  }
+
+  .flip-card {
+    width: 100%;
+    min-height: 100%;
+    /* height: 50%; */
+  }
+
+  .flip-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .flip-card-back h4 {
+
+    font-size: 1.5em;
+  }
+
+
+  /* footer .icons {
+    padding-left: 25%;
+  } */
+  div .gallery .desc .btn{
+    margin-left: 50px;
+    margin-bottom: 5px;
+   }
+}

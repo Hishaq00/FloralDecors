@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="images/logo1 (2).png" />
+  <title>Index</title>
+</head>
+
+<body>
+  <script>
+    AOS.init({
+      duration: 1200,
+    })
+  </script>
+
+  <!-- Navbar Start  -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="" height="70px" /></a>
+      <button class="navbar-toggler bg-transparent text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #dda2a2;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active"  href="index.html" aria-current="page">Home <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active " href="#about">About</a>
+          </li>
+          
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle  active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Flowers</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" role="button" style="background-color: #8f5959; font-size: 1.2em;">
+              <a class="dropdown-item p-3  text-white" href="#roses">Rose</a>
+              <a class="dropdown-item p-3 text-white" href="#tulips">Tulips</a>
+              <a class="dropdown-item p-3 text-white" href="#dasies">Dasies</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle  active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Occasions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId" style="background-color: #8f5959; font-size: 1.2em;">
+              <a class="dropdown-item p-3 text-white" href="#birthday">birthday</a>
+              <a class="dropdown-item p-3 text-white" href="#wedding">Wedding</a>
+              <a class="dropdown-item p-3 text-white" href="#anniversary">Anniversary</a>
+            </div>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link active " href="#comparision">Comparision</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active " href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- cover start  -->
+  <section id="cover"  class="bg-img">
+    <div class="container-fluid">
+      <div class="container ">
+        <h1 data-aos="zoom-in-right">“A flower blossoms for its own joy.”</h1>
+        <p class="des" data-aos="zoom-in-right">
+          Elevating weddings & events through Floral artistry
+        </p>
+        <p class="description" style="font-size: 18px; width: 62%;" data-aos="zoom-in-right">We specialize in crafting beautiful, personalized arrangements for every occasion, from weddings and
+          anniversaries to birthdays and beyond. Our expert florists use only the freshest blooms to create stunning
+          designs that add elegance and charm to any setting. </p>
+        
+        <!-- Login -->
+        <div id="btn">
+          <button class="btn btn-lg"  data-aos="zoom-in" onclick="document.getElementById('id01').style.display='flex'"
+            style="width:auto;">Login</button>
+
+          <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post"
+              style="background-color:  #ebd8d8">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+                <img src="images/logo1 (2).png" alt="Avatar" class="avatar">
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="login btn" type="submit" style="width: 300px;">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container">
+                <span class="psw">Forgot <a href="#" style="color: rgb(133, 127, 127);">password?</a></span>
+              <p class="text-center p-5" style="font-size: 15px;"> We respect your privacy</p>
+              </div>
+            </form>
+          </div>
+          <!-- Signup  -->
+          <button class="btn btn1 btn-lg"  data-aos="zoom-in"
+            onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+          <div id="id02" class="signmodal">
+            <span onclick="document.getElementById('id02').style.display='flex'" class="close"
+              title="Close Modal">&times;</span>
+            <form class="sign-modal-content container  animate" action="/action_page.php"
+              style="background-color:  #ebd8d8">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+                <img src="images/logo1 (2).png" alt="Avatar" class="avatar">
+              </div>
+              <p class="text-center" style="font-size: 13px;">Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+
+              <p  style="font-size: 13px;">By creating an account you agree to our <a href="#" style="color: rgb(133, 127, 127);">Terms &
+                  Privacy</a>.</p>
+
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                  class="cancelbtn btn1">Cancel</button>
+                <button type="submit" class="signupbtn btn">Sign Up</button>
+              <p class="text-center"  style="font-size: 15px;"> We respect your privacy</p>
+              </div>
+          </div>
+          
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <div class="stem"><img src="images/stem-removebg-preview.png" alt=""></div>
+  <!-- About us  -->
+
+   <section id="about">
+
+    <div class="container-fluid row p-2">
+      <div class="about col p-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+        data-aos-duration="3000">
+        <h2>About us</h2>
+        <p>Our team at The Floral Decor have garnered an illustrious reputation for elevating weddings and events
+          through the beauty of flowers. Underpinned by a passion for floral artistry, The Floral Decor was founded by
+          Freeda in 2019 and our team have since worked with couples across the Capital and beyond to curate flowers
+          from the heart.
+
+          Focusing on natural, romantic and timeless flowers, our signature style evolves around your love story.</p>
+
+      </div>
+      <div class="col  p-4 girl"><img src="images/girl.jpg" height="100%" width="100%" alt="" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-duration="3000"></div>
+    </div>
+    
+  </section>
+  
+  <!-- border  -->
+  <div id="border">
+    <img src="images/b2.png" alt="" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+      data-aos-duration="3000">
+
+  </div>
+  <!-- Occasion  -->
+  <section id="occasion">
+    <div class=" row container-fluid p-5" data-aos="fade-up" data-aos-duration="4000">
+      <h2 class="text-center p-5">Occasions</h2>
+      <!-- BirthDay Decor  -->
+      <div class=" card col-md-4 p-2" id="birthday">
+        <img src="images/birthday3.webp" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-center">Birthday</h5>
+          <p class="card-text text-center" style="justify-content: space-evenly;">Celebrate your special day with the
+            enchanting beauty of our birthday floral arrangements.From cheerful sunflowers to delicate roses,Let us help
+            you make every birthday a blooming success with our personalized floral designs.</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="birthdayBtn" class="btn ">More</button>
+
+          <!-- The Modal -->
+          <div id="bModal" class="bmodal">
+
+            <!-- Modal content -->
+            <div class="bmodal-content">
+              <span class="bclose">&times;</span>
+              <h3 class="text-center" style="color: #684040;">The true work of art is but a shadow of the divine
+                perfection." Michelangelo</h3>
+              <section id="birthday">
+
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthday1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+
+                        <h4>Transform your space with our exquisite floral arrangements.</h4>
+<button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthday2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Handcrafted floral designs for every occasion.</h4>
+                        <button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthday3.webp" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Bringing beauty and fragrance to your life.</h4>
+                        <button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthdaycover.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Discover the perfect floral decor for any setting.</h4>
+                        <button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthdaydecor.avif" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Elegant floral decor to elevate your space.</h4>
+                        <button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/birthday4.webp" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Custom arrangements tailored to your style.</h4>
+                        <button class="btn"><a href="Word Documents\BIRTHDAY DECORS1.doc.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- Wedding Decor  -->
+      <div class="card col-md-4 p-2 " id="wedding"><img src="images/wedding4.webp" alt="">
+        <div class="card-body ">
+          <h5 class="card-title text-center">Wedding</h5>
+          <p class="card-text text-center" >Make your wedding day unforgettable
+            with our exquisite floral decor, designed to capture the romance and elegance of your special moment. From
+            breathtaking stunning  bridal bouquets to stunning centerpieces</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="weddingBtn" class="btn ">More</button>
+          <!-- The Modal -->
+          <div id="wModal" class="wmodal">
+
+            <!-- Modal content -->
+            <div class="wmodal-content">
+              <span class="wclose">&times;</span>
+              <h3 class="text-center" style="color: #684040;">"Quality is not an act, it is a habit." Aristotle</h3>
+              <section id="wedding">
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding1.avif" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Experience the art of floral decor.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding2.webp" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Vibrant floral designs to brighten your day.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding3.jfif" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Premium flowers for timeless decor.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding6.jfif" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Personalized floral arrangements for unique spaces.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding4.webp" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Beautiful decor that tells a story.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/wedding5.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Classic floral designs for modern living.</h4>
+                        <button class="btn"><a href="Word Documents\WEDDING DECORS.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- Anniversary decor  -->
+      <div class="card col-md-4 p-2" id="anniversary"><img src="images/aniversarydecor.jpeg" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-center">Anniversary</h5>
+          <p class="card-text text-center" style="justify-content: space-evenly;">Celebrate your enduring love with our
+            exquisite anniversary floral decor. Each arrangement is thoughtfully designed to symbolize the beauty and
+            strength of your relationship, featuring the freshest, most vibrant flowers.</p>
+          <!-- Trigger/Open The Modal -->
+          <button id="aniversaryBtn" class="btn ">More</button>
+          <!-- The Modal -->
+          <div id="aModal" class="amodal">
+
+            <!-- Modal content -->
+            <div class="amodal-content">
+              <span class="aclose">&times;</span>
+              <h3 class="text-center" style="color: #684040;">Flowers don’t tell, they show.– Stephanie Skeem</h3>
+              <section id="aniversary">
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversay6.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Year-round beauty with our floral arrangements.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversary5.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Step into a world of floral enchantment.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversary4.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Elevate your space with our exquisite flowers.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container row">
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversary3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Unique floral arrangements that shine.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversary2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Bringing balance and beauty with every bouquet.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card col-md-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/aniversary7.jpg" alt="Avatar" style="width:300px; height:300px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h4>Curated floral designs for discerning tastes.</h4>
+                        <button class="btn"><a href="Word Documents\Wedding floral.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+  <div id="border" style=" background-color: #f2e3e3;">
+    <img src="images/b2.png" alt="" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+      data-aos-duration="3000" s>
+
+  </div>
+  <!-- Flowers  --> 
+  <section>
+<div class="col-md-5" style=" background-color: #f2e3e3; height: 500px;width: 100%;padding: 10px 0 20px 0;">
+  <section class="gallery" style=" justify-content: center; padding: 30px 0 10px 15%;">
+      <div class="container">
+          <div class="container-fluid" style="align-items: center;">
+           
+              <div class="responsive" id="roses">
+                  <div class="gallery ">
+                  
+                      <a target="_blank" href="img_5terre.jpg">
+                          <img src="images/roses.jpg" alt="ROSES" style="height: 300px;">
+                      </a>
+                      <!-- The Modal 1 -->
+                      <div id="modal1" class="modals">
+                          <!-- Modal content -->
+                          <div class="modal-content-gallery " >
+                              <span class="close1" data-modal="modal1">&times;</span>
+                              <div class="modal-images">
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_5terre.jpg">
+                                          <img src="images/redrose.jpg" alt="Red Rose" style ="height: 320px"> 
+                                      </a>
+                                      <div class="desc">"A bold statement of love and passion, perfect for creating a dramatic and romantic ambiance."</div>
+                                      <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\RosesFlower.docx" download ="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_forest.jpg">
+                                          <img src="images/white roses.jpg" alt="White Rose" style ="height: 320px">
+                                      </a>
+                                      <div class="desc">"Symbolizing purity and grace, ideal for a timeless and classic arrangement."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\RosesFlower.docx" download ="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_lights.jpg">
+                                          <img src="images/pinkrose.jpg" alt="Pink Rose" style ="height: 320px">
+                                      </a>
+                                      <div class="desc"> "Elegant and charming, perfect for adding a touch of romance to any decor."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\RosesFlower.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desc"><button class="buttons" id="myBtn1">More Details About Roses</button></div>
+                  </div>
+              </div>
+              <div class="responsive" id="tulips">
+                  <div class="gallery">
+                      <a href="img_forest.jpg">
+                          <img src="images/tulips.jpg" alt="tulips" style="height: 300px;">
+                      </a>
+                      <!-- The Modal 2 -->
+                      <div id="modal2" class="modals">
+                          <!-- Modal content -->
+                          <div class="modal-content-gallery">
+                              <span class="close1" data-modal="modal2">&times;</span>
+                              <div class="modal-images">
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_5terre.jpg">
+                                          <img src="images/yellowtulips.jpg" alt="Yellow Tulips" style=" height: 320px;">
+                                      </a>
+                                      <div class="desc">"Bright and cheerful, perfect for adding a sunny touch to any space."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\TULIPSFLOWERs.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                        </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_forest.jpg">
+                                          <img src="images/purple tulips.jpg" alt="Purple Tulips" style ="height: 320px">
+                                      </a>
+                                      <div class="desc">"Elegant and regal, ideal for creating a sophisticated ambiance."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\TULIPSFLOWERs.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_lights.jpg">
+                                          <img src="images/white tulips.jpg" alt="White Tulips" style ="height: 320px">
+                                      </a>
+                                      <div class="desc">"Pure and timeless, great for a clean and classic decoration style."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\TULIPSFLOWERs.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desc"><button class="buttons" id="myBtn2"> More Details About Tulips</button></div>
+                  </div>
+              </div>
+              <div class="responsive" id="dasies">
+                  <div class="gallery">
+                      <a href="img_lights.jpg">
+                          <img src="images/dasies.jpg" alt="Northern Lights" style="height: 300px;">
+                      </a>
+                      <!-- The Modal 3 -->
+                      <div id="modal3" class="modals">
+                          <!-- Modal content -->
+                          <div class="modal-content-gallery">
+                              <span class="close1" data-modal="modal3">&times;</span>
+                              <div class="modal-images">
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_5terre.jpg">
+                                          <img src="images/whitedasies.jpg" alt="Cinque Terre" style="height: 320px;">
+                                      </a>
+                                      <div class="desc">"" Ideal for creating a fresh and clean look in floral arrangements and centerpieces."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\DAISY FLOWER.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_forest.jpg">
+                                          <img src="images/yellow dasies.jpg" alt="Yellow Dasies" style ="height: 320px">
+                                      </a>
+                                      <div class="desc">"Great for bringing a cheerful and sunny vibe to any floral display or garden setting."</div>
+                                       <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\DAISY FLOWER.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                                  <div class="gallery">
+                                      <a target="_blank" href="img_lights.jpg">
+                                          <img src="images/pinkdaisies.jpg" alt="Pink Dasies " style="height: 320px;">
+                                      </a>
+                                         <div class="desc">"Perfect for adding a touch of delicate romance to bouquets and wedding decorations."</div>
+                                          <button class="btn" style="margin-left: 100px; background-color: #dda2a2;"><a href="Word Documents\DAISY FLOWER.docx" download="" style="color: black; text-decoration: none;">View Details</a></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="desc"><button class="buttons" id="myBtn3">More Details About Daisies</button></div>
+                  </div>
+              </div>
+              <div class="clearfix1"></div>
+          </div>
+      </div>
+  </section>
+</div>
+  </section>
+  <!-- slider  -->
+  <section id="slider" style=" background-color: #f2e3e3;">
+    <div class="slides container" data-aos="fade-up">
+      <div class="slide slide-1">
+        <img src="images/slider1.jpg" alt="">
+      </div>
+      <div class="slide slide-2">
+        <img src="images/slider2.jpg" alt="">
+      </div>
+      <div class="slide slide-3">
+        <img src="images/slider3.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+<!-- Comparison  -->
+<section id="comparision" style="background-color: #f2e3e3;">
+  <div class="containertp">
+      <h1 style="background-color: #ebd8d8; color: #8f5959;">Comparison</h1>
+      <div>
+          <label for="product1">Select First Product:
+          <select id="product1"  style="height: 40px; width: 200px;"></label>
+              <option value="Rose Bouquet">Rose Bouquet</option>
+              <option value="Tulip Arrangement">Tulip Arrangement</option>
+              <option value="Orchid Centerpiece">Orchid Centerpiece</option>
+              <option value="Lily Vase">Lily Vase</option>
+              <option value="Sunflower Pot">Sunflower Pot</option>
+              <option value="Daisy Basket">Daisy Basket</option>
+          </select>
+          
+          <label for="product2">Select Second Product:
+          <select id="product2" style="height: 40px; width: 200px;"></label>
+              <option value="Rose Bouquet">Rose Bouquet</option>
+              <option value="Tulip Arrangement">Tulip Arrangement</option>
+              <option value="Orchid Centerpiece">Orchid Centerpiece</option>
+              <option value="Lily Vase">Lily Vase</option>
+              <option value="Sunflower Pot">Sunflower Pot</option>
+              <option value="Daisy Basket">Daisy Basket</option>
+          </select>
+          
+          <button  onclick="compareProducts()" class="btn-lg compare" style="background-color: #ae7070; color: #f1e8e8;">Compare</button>
+      </div>
+
+      <div class="compare-container">
+          <div class="compare-box" id="Rose_Bouquet">
+              <h2>Rose Bouquet</h2>
+              <img src="images/p5.jpg" alt="Rose Bouquet" class="product-img">
+              <p>Color: Red</p>
+              <p>Material: Silk</p>
+              <p>Description: A beautiful arrangement of red silk roses, perfect for expressing love and admiration.</p>
+          </div>
+          <div class="compare-box" id="Tulip_Arrangement">
+              <h2>Tulip Arrangement</h2>
+              <img src="images/s2.jpg" alt="Tulip Arrangement" class="product-img">
+              <p>Color: Yellow</p>
+              <p>Material: Plastic</p>
+              <p>Description: A vibrant display of yellow plastic tulips, symbolizing cheerful thoughts and sunshine.</p>
+          </div>
+          <div class="compare-box" id="Orchid_Centerpiece">
+              <h2>Orchid Centerpiece</h2>
+              <img src="images/s3.jpg" alt="Orchid Centerpiece" class="product-img">
+              <p>Color: Purple</p>
+              <p>Material: Real Flowers</p>
+              <p>Description: An elegant centerpiece with real purple orchids, exuding sophistication and grace.</p>
+          </div>
+          <div class="compare-box" id="Lily_Vase">
+              <h2>Lily Vase</h2>
+              <img src="images/s4.webp" alt="Lily Vase" class="product-img">
+              <p>Color: White</p>
+              <p>Material: Silk</p>
+              <p>Description: A delicate arrangement of white silk lilies in a vase, symbolizing purity and refined beauty.</p>
+          </div>
+          <div class="compare-box" id="Sunflower_Pot">
+              <h2>Sunflower Pot</h2>
+              <img src="images/s5.jpg" alt="Sunflower Pot" class="product-img">
+              <p>Color: Yellow</p>
+              <p>Material: Plastic</p>
+              <p>Description: A cheerful pot of large yellow plastic sunflowers, representing happiness and longevity.</p>
+          </div>
+          <div class="compare-box" id="Daisy_Basket">
+              <h2>Daisy Basket</h2>
+              <img src="images/s6.webp" alt="Daisy Basket" class="product-img">
+              <p>Color: White</p>
+              <p>Material: Silk</p>
+              <p>Description: A cute basket filled with small white silk daisies, symbolizing innocence and new beginnings.</p>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      function compareProducts() {
+          const product1 = document.getElementById("product1").value.replace(/ /g, "_");
+          const product2 = document.getElementById("product2").value.replace(/ /g, "_");
+
+          // Hide all product boxes
+          const compareBoxes = document.querySelectorAll('.compare-box');
+          compareBoxes.forEach(box => box.style.display = 'none');
+
+          // Show selected product boxes
+          document.getElementById(product1).style.display = 'block';
+          document.getElementById(product2).style.display = 'block';
+      }
+  </script>
+</section>
+ <!-- contact us  -->
+  <section id="contact">
+    <div class="container p-5">
+        <div >
+          <h4 style="font-size: 3em;" class="text-center p-3">Contact Us</h4>
+          <form id="contactForm">
+            <div class="form-group p-2">
+              <input  type="text" class="form-control" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group p-2">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group p-2">
+              <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
+              <p class="email"> Email: <a  style="font-weight: bold;" href="mailto:info@company.com">info@company.com</a></p>
+            </div>
+            <div class="text-center">
+              <button style="border: 2px #ae707a; background-color: #ae7070;" type="submit" class="btn btn-lg">Submit</button>
+            </div>
+            <p class="text-center p-5"> We respect your privacy</p>
+            
+          </form>
+        </div>
+      
+           </div>
+    </div>
+  </section>
+  <section id="Png-flower">
+    <div class="container-fluid">
+      <div class="row container">
+        <div class="col-md-5" data-aos="zoom-in-left"><img src="images/flower.png" alt="" height="200px" width="200px">
+        </div>
+        <div class="col-md-7" data-aos="zoom-in-left">
+          <p>We specialize in crafting beautiful, personalized arrangements for every occasion, from weddings and
+            anniversaries to birthdays and beyond. Our expert florists use only the freshest blooms to create stunning
+            designs that add elegance and charm to any setting. </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer  -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row p-5" >
+        <div class="col-md-4"  style="border-right: 1px solid rgba(255, 246, 246, 0.3); margin: auto;">
+          <img src="images/logo1.png" alt="" height="80px">
+        </div>
+        <div class="col-md-2"  style="border-right: 1px solid rgba(255, 246, 246, 0.3);">
+          <h3>Quick Links:</h3>
+          <ul>
+            <li><a href="#cover">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" >
+          <h3>Contact:</h3>
+          <ul>
+            <li  style="font-size: 20px; color: white; list-style: none; padding-bottom: 15px;" >Adress:<a href="#cover" style="color: #ebd8d8; text-decoration: none; font-size: 15px;">30-A, Progressive Center, Suite # 202-203, Main Shahrah-e-Faisal Rd, near Lal Kothi (house), Karachi, 75400, Pakistan</a></li>
+            <li style="font-size: 20px; color: white;  list-style: none;">Telephone:<a href="#about" style="color: #ebd8d8; font-size: 15px;">02134385418</a></li>
+          </ul>
+        </div>
+   <div class="col-md-3 p-5">
+     <!-- Refresh Counter  -->
+     <div class="p-5"  >
+      <li class="refreshCounter" id="count">Visitor Counter:
+        <p id="counter" class="p-2"> 00</p>
+      </li>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    </div>
+<hr>
+<div class="icons">
+<a href="https://aptech-education.com.pk/#/centre?id=ca1d2cdb-eca0-4177-bfe7-08db9f09cf7c"   ><svg onclick="showgeoLocation()" xmlns="http://www.w3.org/2000/svg" width="30" height="30"  class="bi bi-globe" viewBox="0 0 16 16">
+  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+</svg></a>
+<a href="https://www.google.com/maps/dir/24.8693606,67.082216/30-A,+Aptech+Learning,+Shahrah+e+Faisal+Center,+Progressive+Center,+Suite+%23+202-203,+Main+Shahrah-e-Faisal+Rd,+near+Lal+Kothi+(house),+Karachi,+75400/@24.8680866,67.07344,16z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3eb33ea3db108f41:0x42acc4507358b160!2m2!1d67.0743981!2d24.8632639?entry=ttu" + shopLatitude + "," + shopLongitude + "' target='_blank'" target="_blank"  onclick="showgeoLocation()">
+  <svg  id="map-link" xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+  </svg>
+</a>
+<script>
+  function showgeoLocation() {
+      // Replace these coordinates with the latitude and longitude of the shop
+      var shopLatitude = 24.863599137397788; 
+      var shopLongitude = 67.07429829970489; 
+      
+      var mapLink = document.getElementById('map-link');
+}
+  </script>
+  
+  
+<a href="https://www.facebook.com/aptechsfc?mibextid=ZbWKwL" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></a>
+
+<a href="https://wa.me/+923339560169" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg></a>
+   </div>
+  </div>
+  <hr>
+        <div class="text-center" style="font-size: 20px;">
+          <p>© 2021 Company, Inc. All rights reserved.</p>
+        </div>
+      </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script.js"></script>
+  <script src="jquery-3.7.1.js"></script>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+  
+  <script>
+    var n = localStorage.getItem('on_load_counter');
+    if (n === null) {
+      n = 0;
+    }
+    n++;
+    localStorage.setItem("on_load_counter", n);
+    document.getElementById('counter').innerHTML = n;
+
+    var date = new Date();
+    var day = date.getDate();
+    var mon = date.getMonth();
+    var year = date.getFullYear();
+    var hrs = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    document.getElementById("show").innerHTML = day + " - " + (mon + 1) + " - " + year + " " + " " + hrs + " - " + min + " - " + sec;
+
+  </script>
+ </body>
+
+</html>
